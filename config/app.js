@@ -21,6 +21,9 @@ app.use(session({
   resave: true,
   secret: "sessionSecret"
 }));
+// By including this middleware, your Express application will be able to handle 
+// sessions, store session data, and maintain user-specific information throughout 
+// their interactions with your application.
 
 
 let indexRouter = require('../routes/index');

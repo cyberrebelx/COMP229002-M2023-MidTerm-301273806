@@ -109,7 +109,7 @@ module.exports.processEditPage = async(req, res, next) => {
         delete updatedCar._id; // Exclude the _id field from the update
   
         // Submits updatedProduct to the DB and waits for a result.
-        let result = await CarModel.updateOne({ _id: id }, updatedProduct);
+        let result = await CarModel.updateOne({ _id: id }, updatedCar);
         console.log(result);
 
         // If the product is updated redirects to the list
