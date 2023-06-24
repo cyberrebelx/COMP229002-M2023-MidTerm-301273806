@@ -2,7 +2,7 @@
 let atlasDB = "mongodb+srv://dbadmin:DHJb5AlrPlGPlUGq@clustercomp229.eohxdyl.mongodb.net/Vehicles";
 
 // Database setup
-let mongoose = require('../node_modules/mongoose');
+let mongoose = require('mongoose');
 
 module.exports = function(){
 
